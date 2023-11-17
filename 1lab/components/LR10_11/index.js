@@ -5,10 +5,12 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import Cryptos from "./screens/Cryptos";
 import Cart from "./screens/Cart";
+import DB from "./utils/db";
 
 const Stack = createNativeStackNavigator();
 
 const LR10 = () => {
+    DB.initiate()
     return <Provider store={store}>
         <NavigationContainer>
             <Stack.Navigator>
