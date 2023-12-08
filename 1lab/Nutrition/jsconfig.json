@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "@screens": ["./src/screens/*"],
+      "@components": ["./src/components/*"],
+      "@features": ["./src/features/*"],
+      "@utils": ["./src/features/*"],
+      "@context": ["./src/context/*"],
+      "@store": ["./src/store/*"],
+      "@models": ["./src/models/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
